@@ -88,6 +88,9 @@ try:
     draw.text((x_title, y_title), title, font=title_font, fill=epd.BLACK)
     draw.text((x_author, y_author), author, font=author_font, fill=epd.BLACK)
 
+    # Rotate image
+    image = image.rotate(180)
+
     # Display image
     epd.display(epd.getbuffer(image))
 
